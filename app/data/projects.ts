@@ -90,7 +90,7 @@ export const projects = [
     solution: "Built a paper trading platform concept that combines market education with coding-style algorithmic strategy practice.",
     impact: "Positions trading education like LeetCode for finance-minded CS students.",
     stack: ["Fintech", "Paper Trading", "Algorithms", "Education", "Markets"],
-    live: "https://your-tradechip-url.vercel.app",
+    live: "https://trade-chip.vercel.app",
   },
   {
     slug: "deskribe",

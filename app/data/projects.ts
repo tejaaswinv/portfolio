@@ -49,12 +49,12 @@ export const projects = [
     impact: "Pitched for Hult Prize and Baby Shark, iterating based on judge feedback across multiple versions.",
     stack: ["Wearables", "AI/ML", "Ayurveda", "Healthcare", "Hult Prize"],
     docs: [
-  {
-    title: "Pitch Deck",
-    file: "/docs/deskribe/pitch-deck.pdf",
-    type: "pdf",
-  },
-]
+        {
+            title: "Pitch Deck",
+            file: "/docs/deskribe/pitch-deck.pdf",
+            type: "pdf",
+        },
+    ],   
   },
   {
     slug: "anonikaadhal",

@@ -51,7 +51,7 @@ export const projects = [
     docs: [
         {
             title: "Pitch Deck",
-            file: "/docs/deskribe/pitch-deck.pdf",
+            file: "/docs/ayupulse/pitch-deck.pdf",
             type: "pdf",
         },
     ],   

@@ -98,14 +98,36 @@ export default async function ProjectPage({ params }: PageProps) {
         </section>
       )}
 
-      <section className="projectDetailBox">
-        <p className="label">Documentation</p>
-        <h2>Coming Soon</h2>
-        <p>
-          Add product screenshots, pitch decks, architecture diagrams, GitHub
-          links, demo videos, research notes, or validation evidence here.
-        </p>
-      </section>
+      {project.docs && project.docs.length > 0 ? (
+  <section className="projectDetailBox">
+    <p className="label">Documentation</p>
+    <h2>Proof of Work</h2>
+
+    <div className="docsGrid">
+      {project.docs.map((doc) => (
+        <a
+          key={doc.title}
+          href={doc.file}
+          target="_blank"
+          className="docCard"
+        >
+          <p>{doc.type.toUpperCase()}</p>
+          <h3>{doc.title}</h3>
+          <span>Open →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+) : (
+  <section className="projectDetailBox">
+    <p className="label">Documentation</p>
+    <h2>Proof of Work</h2>
+    <p>
+      Pitch decks, validation notes, product screenshots, research references,
+      and technical documentation will be added here.
+    </p>
+  </section>
+)}
     </main>
   );
 }

@@ -38,6 +38,14 @@ export const projects = [
     solution: "Designed a turtle-inspired smart bin system where each bin monitors nearby waste accumulation and sends node data to generate area heat maps.",
     impact: "Can help NParks or cleaning workers prioritise high-waste zones and reduce inefficient manual inspection.",
     stack: ["IoT", "Smart Bin", "Computer Vision", "Heat Maps", "Sustainability"],
+    docs: [
+  {
+    title: "Documentation",
+    file: "/docs/littertle/documentation.pdf",
+    type: "pdf",
+    thumbnail: "/docs/littertle/documentation-cover.png",
+  },
+]   
   },
   {
     slug: "ayupulse",
@@ -54,12 +62,6 @@ export const projects = [
     file: "/docs/ayupulse/pitch-deck.pdf",
     type: "pdf",
     thumbnail: "/docs/ayupulse/pitch-deck-cover.png",
-  },
-  {
-    title: "Validation Notes",
-    file: "/docs/ayupulse/validation.pdf",
-    type: "pdf",
-    thumbnail: "/docs/ayupulse/validation-cover.png",
   },
 ]   
   },
@@ -78,12 +80,6 @@ export const projects = [
     file: "/docs/anonikaadhal/pitch-deck.pdf",
     type: "pdf",
     thumbnail: "/docs/anonikaadhal/pitch-deck-cover.png",
-  },
-  {
-    title: "Validation Notes",
-    file: "/docs/anonikaadhal/validation.pdf",
-    type: "pdf",
-    thumbnail: "/docs/anonikaadhal/validation-cover.png",
   },
 ]
   },

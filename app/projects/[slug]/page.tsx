@@ -1,5 +1,4 @@
 import Link from "next/link";
-import "./globals.css";
 import { projects } from "../../data/projects";
 
 type PageProps = {

@@ -49,12 +49,19 @@ export const projects = [
     impact: "Pitched for Hult Prize and Baby Shark, iterating based on judge feedback across multiple versions.",
     stack: ["Wearables", "AI/ML", "Ayurveda", "Healthcare", "Hult Prize"],
     docs: [
-        {
-            title: "Pitch Deck",
-            file: "/docs/ayupulse/AyuPulse_SBS.pdf",
-            type: "pdf",
-        },
-    ],   
+  {
+    title: "Pitch Deck",
+    file: "/docs/ayupulse/pitch-deck.pdf",
+    type: "pdf",
+    thumbnail: "/docs/ayupulse/pitch-deck-cover.png",
+  },
+  {
+    title: "Validation Notes",
+    file: "/docs/ayupulse/validation.pdf",
+    type: "pdf",
+    thumbnail: "/docs/ayupulse/validation-cover.png",
+  },
+]   
   },
   {
     slug: "anonikaadhal",
@@ -65,6 +72,20 @@ export const projects = [
     solution: "Built an anonymous communication concept with privacy-first chat and experimental voice modulation between male and female voice frequencies.",
     impact: "After Baby Shark judge feedback on regulatory risks, the idea was repositioned for military and intelligence communication use cases.",
     stack: ["Privacy", "Secure Communication", "Voice Modulation", "Defense Use Case"],
+    docs: [
+  {
+    title: "Pitch Deck",
+    file: "/docs/anonikaadhal/pitch-deck.pdf",
+    type: "pdf",
+    thumbnail: "/docs/anonikaadhal/pitch-deck-cover.png",
+  },
+  {
+    title: "Validation Notes",
+    file: "/docs/anonikaadhal/validation.pdf",
+    type: "pdf",
+    thumbnail: "/docs/anonikaadhal/validation-cover.png",
+  },
+]
   },
   {
     slug: "flaire",

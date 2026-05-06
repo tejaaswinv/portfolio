@@ -15,7 +15,9 @@ export default async function ProjectPage({ params }: PageProps) {
   if (!project) {
     return (
       <main className="projectPage">
-        <Link href="/" className="backLink">← Back</Link>
+        <Link href="/" className="backLink">
+          ← Back
+        </Link>
         <h1>Project not found.</h1>
       </main>
     );
@@ -23,7 +25,9 @@ export default async function ProjectPage({ params }: PageProps) {
 
   return (
     <main className="projectPage">
-      <Link href="/" className="backLink">← Back to Portfolio</Link>
+      <Link href="/" className="backLink">
+        ← Back to Portfolio
+      </Link>
 
       <section className="projectHero">
         <p className="label">{project.type}</p>
@@ -98,36 +102,48 @@ export default async function ProjectPage({ params }: PageProps) {
         </section>
       )}
 
-      {project.docs && project.docs.length > 0 ? (
-  <section className="projectDetailBox">
-    <p className="label">Documentation</p>
-    <h2>Proof of Work</h2>
+      {project.docs && project.docs.length > 0 && (
+        <section className="docsShowcase">
+          <div className="docsHeader">
+            <div>
+              <p className="label">Documentation</p>
+              <h2>Proof of Work</h2>
+            </div>
 
-    <div className="docsGrid">
-      {project.docs.map((doc) => (
-        <a
-          key={doc.title}
-          href={doc.file}
-          target="_blank"
-          className="docCard"
-        >
-          <p>{doc.type.toUpperCase()}</p>
-          <h3>{doc.title}</h3>
-          <span>Open →</span>
-        </a>
-      ))}
-    </div>
-  </section>
-) : (
-  <section className="projectDetailBox">
-    <p className="label">Documentation</p>
-    <h2>Proof of Work</h2>
-    <p>
-      Pitch decks, validation notes, product screenshots, research references,
-      and technical documentation will be added here.
-    </p>
-  </section>
-)}
+            <p>
+              Pitch decks, validation notes, product screenshots, research
+              references, and technical documentation.
+            </p>
+          </div>
+
+          <div className="docsCarousel">
+            {project.docs.map((doc) => (
+              <a
+                key={doc.title}
+                href={doc.file}
+                target="_blank"
+                className="docPreviewCard"
+              >
+                <div className="docThumbnail">
+                  {doc.thumbnail ? (
+                    <img src={doc.thumbnail} alt={doc.title} />
+                  ) : (
+                    <div className="docFallback">
+                      {doc.type.toUpperCase()}
+                    </div>
+                  )}
+                </div>
+
+                <div className="docMeta">
+                  <p>{doc.type.toUpperCase()}</p>
+                  <h3>{doc.title}</h3>
+                  <span>Open file →</span>
+                </div>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
     </main>
   );
 }

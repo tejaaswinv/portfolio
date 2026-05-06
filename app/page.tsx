@@ -162,9 +162,9 @@ export default function Home() {
         <h2>Let’s build something sharp.</h2>
 
         <div>
-          <a href="mailto:your-email@example.com">Email</a>
-          <a href="#">GitHub</a>
-          <a href="#">LinkedIn</a>
+          <a href="mailto:tejaaswin_vaidheeswaran@mymail.sutd.edu.sg">Email</a>
+          <a href="https://github.com/tejaaswinv">GitHub</a>
+          <a href="https://www.linkedin.com/in/tejaaswin-v-15335a280/">LinkedIn</a>
         </div>
       </section>
     </main>

@@ -59,7 +59,7 @@ export const projects = [
     docs: [
   {
     title: "Pitch Deck",
-    file: "/docs/ayupulse/pitch-deck.pdf",
+    file: "/docs/ayupulse/AyuPulse_SBS.pdf",
     type: "pdf",
     thumbnail: "/docs/ayupulse/pitch-deck-cover.png",
   },
